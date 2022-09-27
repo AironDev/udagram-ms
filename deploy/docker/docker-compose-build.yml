@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  reverseproxy:
+    image: airondev/udagram-reverseproxy
+    build: ../../udagram-reverseproxy
+    
+  backend-feed:
+    image: airondev/udagram-api-feed
+    build: ../../udagram-api-feed
+   
+  backend-user:
+    image: airondev/udagram-api-user
+    build: ../../udagram-api-user
+  
+  frontend:
+    image: airondev/udagram-frontend
+    build: ../../udagram-frontend
+    
